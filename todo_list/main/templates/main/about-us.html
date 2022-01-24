@@ -1,0 +1,32 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block content1 %}
+
+<div class="header-bar">
+    <div>
+        <a href="{% url 'tasks' %}">&#8592; Back to task-list</a>
+        <h1>Здравствуй, друг!</h1>
+    </div>
+</div>
+
+<strong><p align=center><big> Немного про нас </big></p> </span></strong>
+<p align=center> Мы студенты 4 курса УГАТУ, выполняем нетривиальную задачу по созданию сайта. Почему нетривиальную? Да
+    потому что мы не знаем, как делать сайты!</p>
+<p align=center><a href="{% url 'projects' %}">Наши проекты</a></p>
+<p align=center>И, кстати, подписывайтесь на наши инстаграммы</p>
+<p align=center><a href="https://www.instagram.com/vasek_shmasek/"><big>Васёк_Шмасёк</big></a></p>
+<p align=center><a href="https://www.instagram.com/shashaurmawerma/"><big>Шаша_Урмаверма</big></a></p>
+<p align=center><big>А это Мы</big></p>
+
+<p>
+<center><img src="{% static 'images/about.jpg' %}" style="margin:0; width:200px;height:260px;display:block"></center>
+<p align=center><big>А это наша моральная поддержка и опора</big></p>
+<center><img src="{% static 'images/KarpovSashka.jpg' %}" style="margin:0; width:200px;height:260px;display:block"></center>
+
+<p style="font-size:10px;"><br>авторская орфография сохранена </p>
+
+</p>
+
+{% endblock content1 %}

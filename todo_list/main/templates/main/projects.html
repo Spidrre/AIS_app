@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block content1 %}
+
+<div class="header-bar">
+    <div>
+        <a href="{{request.META.HTTP_REFERER}}">&#8592; Back to about-page</a>
+        <h1>Наши проекты</h1>
+    </div>
+</div>
+
+<strong><p align=center><big> Наши проекты </big></p> </span></strong>
+<p align=center>Мир в майнкрафте</p>
+<center><img src="{% static 'images/maincraft.jpg' %}" style="margin:0; width:600px;height:260px;display:block"></center>
+<p align=center><a href="https://github.com/Spidrre/TPR_6"><big>Програма для анализа акций</big></a></p>
+<center><img src="{% static 'images/croc.jpg' %}" style="margin:0; width:600px;height:260px;display:block"></center>
+<p align=center><big>Есть еще миры в Terraria, проектов у нас было уххх!!!!</big></p>
+
+{% endblock content1 %}
